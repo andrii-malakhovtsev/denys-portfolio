@@ -1,0 +1,119 @@
+/* Base styles */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header, Nav, Footer — full-width gray blocks */
+.header,
+.nav,
+.footer {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 1.5rem 5vw;
+  box-sizing: border-box;
+}
+
+.header {
+  border-bottom: 2px solid #444;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.location {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 5vw;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Project grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #f9f9f9;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card img,
+.project-card video {
+  width: 100%;
+  margin-top: 0.5rem;
+  border: 1px solid #aaa;
+}
+
+/* Experience list */
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+  border-top: 1px solid #ccc;
+}

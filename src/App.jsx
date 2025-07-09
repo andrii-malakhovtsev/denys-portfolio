@@ -26,6 +26,7 @@ function App() {
           </p>
         </section>
 
+        
         <section id="projects" className="section">
           <h2>Projects</h2>
           <div className="project-grid">
@@ -50,69 +51,106 @@ function App() {
           </div>
         </section>
 
-        <section id="experience" className="section">
-          <h2>Experience</h2>
-          <ul>
-            <li>
-              <strong>
-                <a href="https://ontu.edu.ua/" target="_blank">
-                ONTU
-                </a>
-              </strong> 
-              – Bachelor's Degree (1996 - 2001)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>
-                <a href="https://telecard.odessa.ua/" target="_blank">
-                Telecard
-                </a>
-              </strong> 
-              – Technical Engineer (2001 - 2007)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>
-                <a href="https://telecard.odessa.ua/" target="_blank">
-                Telecard
-                </a>
-              </strong> – Lead Technical Engineer (2007 - 2011)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>
-                <a href="https://telecard.odessa.ua/" target="_blank">
-                Telecard
-                </a>
-              </strong> – Design Construction Engineer (2011 - 2013)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>"Telecommunicational Technologies"</strong> – Design Construction Engineer (2013 - 2017)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>"Grand Pro"</strong> – Deputy Director (2017 - 2018)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>"Grand Pro"</strong> – Director (2018 - 2021)
-              <br />
-              Role Description
-            </li>
-            <li>
-              <strong>"Tesla Build Group"</strong> – Head of the Logistics and Technical Support Department (2021 - 2022)
-              <br />
-              Role Description
-            </li>
-          </ul>
-        </section>
+        <section id="experience" class="experience" className="section">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="year">2021</div>
+                <div class="content">
+                    <h3>Head of the Logistics and Technical Support Department</h3>
+                    <p class="company">Tesla Build Group</p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="year">2019</div>
+                <div class="content">
+                    <h3>Director</h3>
+                    <p class="company">Grand Pro</p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+            
+             <div class="timeline-item">
+                <div class="year">2018</div>
+                <div class="content">
+                    <h3>Deputy Director</h3>
+                    <p class="company">Grand Pro</p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2017</div>
+                <div class="content">
+                    <h3>Deputy Director</h3>
+                    <p class="company">Grand Pro</p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2013</div>
+                <div class="content">
+                    <h3>Design Construction Engineer</h3>
+                    <p class="company">Telecommunicational Technologies</p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2011</div>
+                <div class="content">
+                    <h3>Design Construction Engineer</h3>
+                    <p class="company">
+                      <a href="https://telecard.odessa.ua/" target="_blank">
+                      Telecard
+                      </a>
+                    </p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2007</div>
+                <div class="content">
+                    <h3>Lead Technical Engineer</h3>
+                    <p class="company">
+                      <a href="https://telecard.odessa.ua/" target="_blank">
+                      Telecard
+                      </a>
+                    </p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">2001</div>
+                <div class="content">
+                    <h3>Technical Engineer</h3>
+                    <p class="company">
+                      <a href="https://telecard.odessa.ua/" target="_blank">
+                      Telecard
+                      </a>
+                    </p>
+                    <p class="description">Role Description</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="year">1996</div>
+                <div class="content">
+                    <h3>Bachelor's Degree in Mechanical Engineering</h3>
+                    <p class="company">
+                      <a href="https://ontu.edu.ua/" target="_blank">
+                      Odesa National Technical University
+                      </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <section id="contact" className="section">
           <h2>Contact</h2>

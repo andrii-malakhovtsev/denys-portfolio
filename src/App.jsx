@@ -64,18 +64,9 @@ function App() {
             </div>
             
             <div class="timeline-item">
-                <div class="year">2019</div>
-                <div class="content">
-                    <h3>Director</h3>
-                    <p class="company">Grand Pro</p>
-                    <p class="description">Role Description</p>
-                </div>
-            </div>
-            
-             <div class="timeline-item">
                 <div class="year">2018</div>
                 <div class="content">
-                    <h3>Deputy Director</h3>
+                    <h3>Director</h3>
                     <p class="company">Grand Pro</p>
                     <p class="description">Role Description</p>
                 </div>

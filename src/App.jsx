@@ -85,9 +85,11 @@ function App() {
                 <div class="year">2013</div>
                 <div class="content">
                     <h3>Design Construction Engineer</h3>
-                    <a href="https://www.infomir.eu/" target="_blank">
-                      Infomir
-                    </a>
+                    <p class="company">
+                      <a href="https://www.infomir.eu/" target="_blank">
+                        Infomir
+                      </a>
+                    </p>
                     <p class="description">Role Description</p>
                 </div>
             </div>

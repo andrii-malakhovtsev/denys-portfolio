@@ -85,7 +85,9 @@ function App() {
                 <div class="year">2013</div>
                 <div class="content">
                     <h3>Design Construction Engineer</h3>
-                    <p class="company">Telecommunicational Technologies</p>
+                    <a href="https://www.infomir.eu/" target="_blank">
+                      Infomir
+                    </a>
                     <p class="description">Role Description</p>
                 </div>
             </div>
@@ -149,8 +151,8 @@ function App() {
             <a href="mailto:mdvden1978usa@gmail.com">mdvden1978usa@gmail.com</a>
           </p>
           <p>LinkedIn:&nbsp; 
-            <a href="https://www.linkedin.com/in/denys-malakhovtsev-12a5a6370/" target="_blank">
-              linkedin.com/in/denys-malakhovtsev-12a5a6370
+            <a href="https://www.linkedin.com/in/denys-malakhovtsev/" target="_blank">
+              linkedin.com/in/denys-malakhovtsev
             </a>
             </p>
         </section>

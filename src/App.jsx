@@ -68,7 +68,10 @@ function App() {
                 <div class="content">
                     <h3>Director</h3>
                     <p class="company">Grand Pro</p>
-                    <p class="description">Role Description</p>
+                    <p class="description">Managing the project team. 
+                      Organizing tenders for the purchase of materials. 
+                      Coordination of design and architectural 
+                      documentation.</p>
                 </div>
             </div>
 
@@ -77,7 +80,9 @@ function App() {
                 <div class="content">
                     <h3>Deputy Director</h3>
                     <p class="company">Grand Pro</p>
-                    <p class="description">Role Description</p>
+                    <p class="description">Managing the project team. 
+                      Organizing tenders for the purchase of materials. 
+                      Coordination of design and architectural documentation.</p>
                 </div>
             </div>
 
@@ -90,7 +95,9 @@ function App() {
                         Infomir
                       </a>
                     </p>
-                    <p class="description">Role Description</p>
+                    <p class="description">Development and modeling of prototypes 
+                      of products and equipment for the production of parts, 
+                      creation of programs for CNC machines and production of prototypes.</p>
                 </div>
             </div>
 
@@ -116,7 +123,11 @@ function App() {
                       Telecard
                       </a>
                     </p>
-                    <p class="description">Role Description</p>
+                    <p class="description">Development of technological processes for the 
+                      production of parts and assemblies, calculation of time and material
+                       standards. Development of production shop layouts, installation of 
+                       equipment lines. Development of assembly devices, tooling for the 
+                       production of parts.</p>
                 </div>
             </div>
 
@@ -129,7 +140,9 @@ function App() {
                       Telecard
                       </a>
                     </p>
-                    <p class="description">Role Description</p>
+                    <p class="description">Development of technological processes for the production of 
+                      parts and assemblies, calculation of time and material standards. 
+                      Development of production shop layouts, installation of equipment lines.</p>
                 </div>
             </div>
 
@@ -145,9 +158,9 @@ function App() {
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
-        <section id="contact" className="section">
+      <section id="contact" className="section">
           <h2>Contact</h2>
           <p>Email:&nbsp;
             <a href="mailto:mdvden1978usa@gmail.com">mdvden1978usa@gmail.com</a>
@@ -157,7 +170,7 @@ function App() {
               linkedin.com/in/denys-malakhovtsev
             </a>
             </p>
-        </section>
+      </section>
       </main>
 
       <footer className="footer">

@@ -28,25 +28,31 @@ function App() {
 
         
         <section id="projects" className="section">
-          <h2>Projects</h2>
+          <h2>Project Examples</h2>
           <div className="project-grid">
             <div className="project-card">
-              <h3>Sample Project 1</h3>
-              <p>
-                Sample Text.
-              </p>
-              <video controls width="100%">
-                <source src="/videos/lift.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <h3>3-axis CNC wood milling Machine</h3>
+              <img src="/images/CNC-WoodMillingMachine/CNC-woodmillingmachine-1.jpg" alt="Rover" />
             </div>
 
             <div className="project-card">
-              <h3>Sample Project 2</h3>
-              <p>
-                Sample Text.
-              </p>
-              <img src="/images/rover.jpg" alt="Rover" />
+              <h3>Automatic machine for bending metal strips</h3>
+              <img src="/images/MetalStripsMachine/SDK1.jpg" alt="Rover" />
+            </div>
+
+            <div className="project-card">
+              <h3>Machine for making metal rings and welding them</h3>
+              <img src="/images/MetalRingsWeldingMachine/MetalRingsWeldingMachine-1.jpg" alt="Rover" />
+            </div>
+
+            <div className="project-card">
+              <h3>Design and manufacturing of a model of a radiator for an LED lamp</h3>
+              <img src="/images/RadiatorForLEDLamp/Radiator.jpg" alt="Rover" />
+            </div>
+
+            <div className="project-card">
+              <h3>CNC lathe</h3>
+              <img src="/images/CNC-Lathe/CNC-Lathe.jpg" alt="Rover" />
             </div>
           </div>
         </section>

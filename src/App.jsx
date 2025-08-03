@@ -1,4 +1,7 @@
 import './App.css';
+import './Header.css';
+
+import Navbar from './components/Navbar';
 
 import Timeline from './components/Timeline';
 
@@ -10,24 +13,19 @@ function App() {
         <p className="location">Dayton, OH | Mechanical Engineer</p>
       </header>
 
-      <nav className="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <Navbar />
 
       <main className="main">
         <section id="about" className="section">
           <h2>About Me</h2>
           <p>
-            I’m a mechanical engineer with <b>over 2 decades</b> of experience in the field. 
+            I’m a mechanical engineer with <b>over 2 decades</b> of experience in the field.
             I have a passion for designing and building innovative solutions that improve
-             efficiency and performance. My expertise includes mechanical design, project
-              management, and team leadership.
+            efficiency and performance. My expertise includes mechanical design, project
+            management, and team leadership.
           </p>
         </section>
-        
+
         <section id="projects" className="section">
           <h2>Project Examples</h2>
           <div className="project-grid">
@@ -59,21 +57,21 @@ function App() {
         </section>
 
         <section id="experience" class="experience" className="section">
-        <h2>Experience</h2>
+          <h2>Experience</h2>
           <Timeline />
         </section>
 
-      <section id="contact" className="section">
+        <section id="contact" className="section">
           <h2>Contact</h2>
           <p>Email:&nbsp;
             <a href="mailto:mdvden1978usa@gmail.com">mdvden1978usa@gmail.com</a>
           </p>
-          <p>LinkedIn:&nbsp; 
+          <p>LinkedIn:&nbsp;
             <a href="https://www.linkedin.com/in/denys-malakhovtsev/" target="_blank">
               linkedin.com/in/denys-malakhovtsev
             </a>
-            </p>
-      </section>
+          </p>
+        </section>
       </main>
 
       <footer className="footer">

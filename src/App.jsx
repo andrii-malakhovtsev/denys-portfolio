@@ -1,8 +1,6 @@
 import './App.css';
-import './Header.css';
 
 import Navbar from './components/Navbar';
-
 import Timeline from './components/Timeline';
 
 function App() {

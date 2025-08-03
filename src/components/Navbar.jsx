@@ -17,7 +17,7 @@ export default function Navbar() {
         setActiveSections(visibleIds);
       },
       {
-        threshold: 0.3, // adjust if needed
+        threshold: 0.3,
       }
     );
 

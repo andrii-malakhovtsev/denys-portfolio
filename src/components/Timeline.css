@@ -1,0 +1,78 @@
+.timeline {
+    position: relative;
+    padding-left: 100px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #ccc;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(244, 219, 92);
+    z-index: 1;
+}
+
+.year {
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+}
+
+.content {
+    padding-left: 30px;
+}
+
+.content h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.company {
+    margin: 0 0 10px 0;
+    color: #666;
+    font-style: italic;
+}
+
+.description {
+    margin: 0;
+    color: #444;
+}
+
+/* Blue vertical part-time line container - absolutely positioned relative to timeline */
+.timeline .parttime-line {
+  position: absolute;
+  left: 100px;          /* same as timeline line */
+  background: rgba(92, 180, 244, 1);
+  width: 2px;
+  border-radius: 1px;
+  z-index: 0;
+}
+
+/* Blue circle for part-time timeline items */
+.timeline-item.parttime::before {
+  background: rgb(92, 180, 244);
+  margin-top: 2px;
+  margin-left: 0.5px;
+  z-index: 2; /* on top of line */
+}

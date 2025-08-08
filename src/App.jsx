@@ -2,15 +2,12 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Timeline from './components/Timeline';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="layout">
-      <header className="header">
-        <h1>Denys Malakhovtsev</h1>
-        <p className="location">Dayton, OH | Mechanical Engineer</p>
-      </header>
-
+      <Header />
       <Navbar />
 
       <main className="main">
@@ -54,7 +51,7 @@ function App() {
           </div>
         </section>
 
-        <section id="experience" class="experience" className="section">
+        <section id="experience" className="section">
           <h2>Experience</h2>
           <Timeline />
         </section>

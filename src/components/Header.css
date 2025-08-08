@@ -1,0 +1,97 @@
+/* Parallax Container */
+.header {
+  position: relative;
+  min-height: 20vh;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  width: 100%;
+  z-index: 1; /* Ensure header stays below navbar (z-index: 2000) */
+}
+
+/* Dark overlay on header background */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Parallax Background */
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  transform: translateZ(0);
+  will-change: transform;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Header Content */
+.header-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.header-content p {
+  color: rgb(211, 211, 211);
+  background-color: rgba(49, 49, 49, 0.6);
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 5px 15px;
+  max-width: 600px;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(108, 108, 108, 0.6);
+  border-radius: 2px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .header {
+    min-height: 25vh;
+  }
+
+  .header-content {
+    padding: 20px 20px;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .header-content p {
+    font-size: 1.2rem;
+    max-width: 100%;
+    padding: 4px 20px;
+  }
+
+  nav {
+    font-size: 1.0rem;
+  }
+}

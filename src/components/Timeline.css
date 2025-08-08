@@ -1,78 +1,170 @@
 .timeline {
-    position: relative;
-    padding-left: 100px;
+  position: relative;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 0px 0;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 100px;
-    top: 0;
-    bottom: 0;
-    width: 1px;
-    background: #ccc;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #ccc;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  z-index: 1;
 }
 
 .timeline-item {
-    position: relative;
-    margin-bottom: 30px;
+  position: relative;
+  width: 45%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
+.timeline-item.fulltime {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.parttime,
+.timeline-item.education {
+  left: 55%;
+  text-align: left;
+}
+
+/* Year dots on timeline (just the circle now) */
 .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -5px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgb(244, 219, 92);
-    z-index: 1;
-}
-
-.year {
-    position: absolute;
-    left: -100px;
-    width: 80px;
-    text-align: right;
-    font-weight: bold;
-    color: #555;
-}
-
-.content {
-    padding-left: 30px;
-}
-
-.content h3 {
-    margin: 0 0 5px 0;
-    font-size: 18px;
-}
-
-.company {
-    margin: 0 0 10px 0;
-    color: #666;
-    font-style: italic;
-}
-
-.description {
-    margin: 0;
-    color: #444;
-}
-
-/* Blue vertical part-time line container - absolutely positioned relative to timeline */
-.timeline .parttime-line {
+  content: '';
   position: absolute;
-  left: 100px;          /* same as timeline line */
-  background: rgba(92, 180, 244, 1);
-  width: 2px;
-  border-radius: 1px;
-  z-index: 0;
+  top: 55px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f4db5c;
+  border: 3px solid var(--main-white);
+  box-shadow: 0 0 0 2px #ccc;
+  z-index: 2;
 }
 
-/* Blue circle for part-time timeline items */
-.timeline-item.parttime::before {
-  background: rgb(92, 180, 244);
-  margin-top: 2px;
-  margin-left: 0.5px;
-  z-index: 2; /* on top of line */
+/* Year label */
+.timeline-item::after {
+  content: attr(data-year);
+  position: absolute;
+  top: 56px;
+  font-weight: bold;
+  color: #555;
+  font-size: 16px;
+  white-space: nowrap;
 }
+
+/* Positioning for fulltime on left */
+.timeline-item.fulltime::before {
+  right: -60px;
+}
+
+.timeline-item.fulltime::after {
+  right: -120px;
+}
+
+/* Positioning for parttime/education on right */
+.timeline-item.parttime::before,
+.timeline-item.education::before {
+  left: -60px;
+}
+
+.timeline-item.parttime::after {
+  left: -160px;
+}
+
+.timeline-item.education::after {
+   left: -120px;
+}
+
+/* Color variations */
+.timeline-item.education::before {
+  background: #abf45c;
+}
+
+.timeline-item.parttime::before {
+  background: #5cb4f4;
+}
+
+
+/* Content box styling */
+.timeline-item .content {
+  background: var(--main-white);
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 100%;
+  display: inline-block;
+}
+
+.timeline-item.fulltime .content {
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.timeline-item.parttime .content,
+.timeline-item.education .content {
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+.timeline-item .company {
+  font-style: italic;
+  color: #555;
+}
+
+.company a {
+  color: #3a7bd5;
+  text-decoration: none;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.company a:hover {
+  text-decoration: underline;
+  color: #1a4a9e;
+}
+
+/* Responsive stack */
+@media (max-width: 700px) {
+  .timeline-item,
+  .timeline-item.fulltime,
+  .timeline-item.parttime,
+  .timeline-item.education {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    margin-left: 0;
+  }
+
+  .timeline-item.fulltime::after,
+  .timeline-item.parttime::after,
+  .timeline-item.education::after {
+    left: 40px !important;
+    top: 25px !important;
+  }
+
+  .timeline-item::before {
+    top: 55px !important;
+    left: -35px !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline {
+    padding-left: 40px;
+  }
+}
+

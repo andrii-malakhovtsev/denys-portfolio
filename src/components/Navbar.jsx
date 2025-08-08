@@ -1,48 +1,60 @@
-import './Navbar.css';
-
 import React, { useEffect, useState } from 'react';
+import './Navbar.css';
 
 const sections = ['about', 'projects', 'experience', 'contact'];
 
-export default function Navbar() {
-  const [activeSections, setActiveSections] = useState([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleIds = entries
-          .filter(entry => entry.isIntersecting)
-          .map(entry => entry.target.id);
-
-        setActiveSections(visibleIds);
-      },
-      {
-        threshold: 0.3,
-      }
-    );
-
-    sections.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+export default function SectionsNav() {
+  const [activeIds, setActiveIds] = useState([]);
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const visibleIds = [];
+
+      sections.forEach((id) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        const rect = el.getBoundingClientRect();
+        const offset = window.innerHeight * 0.1;
+
+        if (rect.top <= window.innerHeight && rect.bottom >= offset) {
+          visibleIds.push(id);
+        }
+      });
+
+      setActiveIds((prev) => {
+        if (
+          prev.length === visibleIds.length &&
+          prev.every((v, i) => v === visibleIds[i])
+        ) {
+          return prev;
+        }
+        return visibleIds;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <nav className="nav">
       {sections.map((id) => (
         <a
           key={id}
-          onClick={() => scrollToSection(id)}
-          className={activeSections.includes(id) ? 'active' : ''}
+          href={`#${id}`}
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection(id);
+          }}
+          className={activeIds.includes(id) ? 'active' : ''}
         >
           {id.charAt(0).toUpperCase() + id.slice(1)}
         </a>

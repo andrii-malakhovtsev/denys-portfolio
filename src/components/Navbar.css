@@ -2,28 +2,33 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
   gap: 2rem;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .nav a {
-  color: gray;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
-  transition: color 0.3s ease;
+  padding: 6px 0;
+  transition: color 0.3s ease, text-decoration 0.3s ease, border-bottom 0.3s ease;
+  display: inline-block;
 }
 
 .nav a:hover {
-  text-decoration: underline;
   color: rgb(195, 97, 0);
+  text-decoration: underline;
 }
 
 .nav a.active {
   color: rgb(195, 97, 0);
-  font-weight: bold;
   text-decoration: none;
+  border-bottom: 2px solid rgb(195, 97, 0);
+  padding-bottom: 4px;
+  font-weight: 700;
 }

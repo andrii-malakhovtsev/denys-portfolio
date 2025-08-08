@@ -1,27 +1,13 @@
+:root {
+  --main-white: #f9f8f6;
+  --background-color: #f9f7f4;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-/* Header, Nav, Footer */
-.header,
-.nav,
-.footer {
-  width: 100%;
-  background-color: #f0f0f0;
-  padding: 1rem 5vw;
-  box-sizing: border-box;
-}
-
-.header {
-  border-bottom: 2px solid #444;
-  text-align: center;
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
+  overflow: visible;
 }
 
 .location {
@@ -34,10 +20,11 @@
 .main {
   width: 100%;
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 5vw;
+  margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
   flex: 1;
+  overflow-x: hidden;
 }
 
 .section {
@@ -56,12 +43,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-card {
   border: 1px solid #ccc;
   padding: 1rem;
-  background: #f9f9f9;
+  background: var(--main-white);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -101,7 +90,7 @@ ul {
 .section-title::after {
   content: '';
   display: block;
-  width: 80px;
+  width: 5rem;
   height: 4px;
   background: #3498db;
   margin: 15px auto;

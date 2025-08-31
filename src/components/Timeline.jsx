@@ -7,6 +7,7 @@ const timelineData = [
     type: 'fulltime',
     title: 'Head of the Logistics and Technical Support Department',
     company: 'Tesla Build Group',
+    description: 'Incoming supply quality control. Optimization of financial balance for production.',
   },
  
   {
@@ -14,7 +15,8 @@ const timelineData = [
     type: 'fulltime',
     title: 'Director',
     company: 'Grand Pro',
-    description: '+ Lead managing of project team',
+    description: 'Lead managing of project team. Optimization and control of design deadlines. ' +
+    'Highest management position in a department related to design, supply, production optimization.',
   },
   {
     year: '2017',
@@ -23,7 +25,7 @@ const timelineData = [
     company: 'Grand Pro',
     description: 'Managing the project team. ' + 
     'Organizing tenders for the purchase of materials. ' +  
-    'Coordination of design and architectural documentation.',
+    'Coordination of design and architectural documentation. '
   },
   {
     year: '2013',
@@ -33,7 +35,8 @@ const timelineData = [
     companyUrl: 'https://www.infomir.eu/',
     description: 'Development and modeling of prototypes of ' + 
     'products and equipment for the production of parts, ' + 
-    'creation of programs for CNC machines and production of prototypes.',
+    'creation of programs for CNC machines and production of prototypes using ' +
+    'SolidCAM, Mastercam, NC Studio',
   },
   {
     year: '2011',
@@ -41,7 +44,8 @@ const timelineData = [
     title: 'Design Construction Engineer',
     company: 'Telecard',
     companyUrl: 'https://telecard.odessa.ua/',
-    description: '+ Main designer of parts and devices.',
+    description: 'Main designer of parts and devices. Development of design documentation '
+    + 'and 3D modeling in SolidWorks, AutoCAD and other systems.',
   },
   {
     year: '2010-2020',
@@ -57,7 +61,9 @@ const timelineData = [
     title: 'Lead Technical Engineer',
     company: 'Telecard',
     companyUrl: 'https://telecard.odessa.ua/',
-    description: '+ Development of assembly devices, tooling for the production of parts.',
+    description: 'Development of tooling and fixtures for assembly and manufacturing '
+    + 'of parts. Development of press molds and dies for mass production. Layout of production '
+    + 'facilities and installation of equipment. Construction of technological lines.',
   },
   {
     year: '2001',
@@ -66,12 +72,13 @@ const timelineData = [
     company: 'Telecard',
     companyUrl: 'https://telecard.odessa.ua/',
     description: 'Development of technological processes for the production of parts and assemblies,'
-    + 'calculation of time and material standards. Development of production shop layouts, installation of equipment lines.',
+    + ' calculation of time and material standards. Development of production shop layouts, '
+    + ' installation of equipment lines.',
   },
   {
     year: '2000',
     type: 'education',
-    title: 'Master\'s Degree in Mechanical Engineering',
+    title: 'Master\'s Degree in Processing Technology',
     company: 'Odesa National Technical University',
     companyUrl: 'https://ontu.edu.ua/',
   },

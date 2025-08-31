@@ -30,7 +30,7 @@ const timelineData = [
   {
     year: '2013',
     type: 'fulltime',
-    title: 'Design Construction Engineer',
+    title: 'Design Mechanical Engineer',
     company: 'Infomir',
     companyUrl: 'https://www.infomir.eu/',
     description: 'Development and modeling of prototypes of ' + 
@@ -41,7 +41,7 @@ const timelineData = [
   {
     year: '2011',
     type: 'fulltime',
-    title: 'Design Construction Engineer',
+    title: 'Design Mechanical Engineer',
     company: 'Telecard',
     companyUrl: 'https://telecard.odessa.ua/',
     description: 'Main designer of parts and devices. Development of design documentation '
@@ -50,7 +50,7 @@ const timelineData = [
   {
     year: '2010-2020',
     type: 'parttime',
-    title: 'Design Construction Engineer',
+    title: 'Design Mechanical Engineer',
     company: 'SDK Systems',
     companyUrl: 'https://sdk-systems.com.pl/en/',
     description: 'Part Time Side Job - Design of production machines.',
@@ -63,7 +63,7 @@ const timelineData = [
     companyUrl: 'https://telecard.odessa.ua/',
     description: 'Development of tooling and fixtures for assembly and manufacturing '
     + 'of parts. Development of press molds and dies for mass production. Layout of production '
-    + 'facilities and installation of equipment. Construction of technological lines.',
+    + 'facilities and installation of equipment. Design of technological lines.',
   },
   {
     year: '2001',

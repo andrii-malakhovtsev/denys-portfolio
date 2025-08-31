@@ -69,6 +69,13 @@ const timelineData = [
     + 'calculation of time and material standards. Development of production shop layouts, installation of equipment lines.',
   },
   {
+    year: '2000',
+    type: 'education',
+    title: 'Master\'s Degree in Mechanical Engineering',
+    company: 'Odesa National Technical University',
+    companyUrl: 'https://ontu.edu.ua/',
+  },
+  {
     year: '1996',
     type: 'education',
     title: 'Bachelor\'s Degree in Mechanical Engineering',

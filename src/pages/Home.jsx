@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 import Navbar from './../components/Navbar';
 import Timeline from './../components/Timeline';
 
+import cncWoodMillingImg from "../assets/CNC-WoodMillingMachine/CNC-woodmillingmachine-1.jpg";
+import metalStripsImg from "../assets/MetalStripsMachine/SDK1.jpg";
+import metalRingsImg from "../assets/MetalRingsWeldingMachine/MetalRingsWeldingMachine-1.jpg";
+import radiatorImg from "../assets/RadiatorForLEDLamp/Radiator.jpg";
+import cncLatheImg from "../assets/CNC-Lathe/CNC-Lathe.jpg";
+
 export default function Home() {
   return (
     <div className="layout">
@@ -25,36 +31,38 @@ export default function Home() {
           <div className="project-grid">
             <div className="project-card">
               <Link to="/projects/cnc-wood-milling-machine" className="block">
-                 <h3>3-axis CNC wood milling Machine</h3>
-                 <img src="src/assets/CNC-WoodMillingMachine/CNC-woodmillingmachine-1.jpg" alt="Rover" />
+                <h3>3-axis CNC wood milling Machine</h3>
+                <img src={cncWoodMillingImg} alt="3-axis CNC wood milling Machine" />
               </Link>
             </div>
 
-             <div className="project-card">
+            <div className="project-card">
               <Link to="/projects/metal-strips-machine" className="block">
-                 <h3>Automatic machine for bending metal strips</h3>
-                 <img src="src/assets/MetalStripsMachine/SDK1.jpg" alt="Rover" />
+                <h3>Automatic machine for bending metal strips</h3>
+                <img src={metalStripsImg} alt="Metal Strips Machine" />
               </Link>
             </div>
 
             <div className="project-card">
               <Link to="/projects/metal-rings-welding-machine" className="block">
-                 <h3>Machine for making metal rings and welding them</h3>
-                 <img src="src/assets/MetalRingsWeldingMachine/MetalRingsWeldingMachine-1.jpg" alt="Rover" />
+                <h3>Machine for making metal rings and welding them</h3>
+                <img src={metalRingsImg} alt="Metal Rings Welding Machine" />
               </Link>
             </div>
 
             <div className="project-card">
               <Link to="/projects/radiator-led-lamp" className="block">
-                <h3>Design and manufacturing of a model of a radiator for an LED lamp</h3>
-                <img src="src/assets/RadiatorForLEDLamp/Radiator.jpg" alt="Rover" />
+                <h3>
+                  Design and manufacturing of a model of a radiator for an LED lamp
+                </h3>
+                <img src={radiatorImg} alt="Radiator for LED Lamp" />
               </Link>
             </div>
 
             <div className="project-card">
               <Link to="/projects/cnc-lathe" className="block">
                 <h3>CNC lathe</h3>
-                <img src="src/assets/CNC-Lathe/CNC-Lathe.jpg" alt="CNC Lathe" />
+                <img src={cncLatheImg} alt="CNC Lathe" />
               </Link>
             </div>
 

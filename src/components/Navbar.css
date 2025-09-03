@@ -21,14 +21,14 @@
 }
 
 .nav a:hover {
-  color: rgb(195, 97, 0);
+  color: var(--main-orange);
   text-decoration: underline;
 }
 
 .nav a.active {
-  color: rgb(195, 97, 0);
+  color: var(--main-orange);
   text-decoration: none;
-  border-bottom: 2px solid rgb(195, 97, 0);
+  border-bottom: 2px solid var(--main-orange);
   padding-bottom: 4px;
   font-weight: 700;
 }

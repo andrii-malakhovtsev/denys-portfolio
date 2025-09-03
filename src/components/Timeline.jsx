@@ -9,7 +9,6 @@ const timelineData = [
     company: 'Tesla Build Group',
     description: 'Incoming supply quality control. Optimization of financial balance for production.',
   },
- 
   {
     year: '2018',
     type: 'fulltime',

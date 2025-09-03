@@ -1,4 +1,3 @@
-// App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ProjectsLayout from "./pages/projects/ProjectsLayout";
@@ -7,7 +6,7 @@ import Header from "./components/Header";
 import RadiatorForLEDLamp from "./pages/projects/RadiatorForLEDLamp";
 import MetalRingsWeldingMachine from "./pages/projects/MetalRingsWeldingMachine";
 import MetalStripsMachine from "./pages/projects/MetalStripsMachine";
-import CncWoodMillingMachine from "./pages/projects/CNCWoodMillingMachine";
+import CncWoodMillingMachine from "./pages/projects/CncWoodMillingMachine";
 
 function AppContent() {
   return (

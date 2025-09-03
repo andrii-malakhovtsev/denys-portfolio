@@ -32,3 +32,17 @@
   padding-bottom: 4px;
   font-weight: 700;
 }
+
+/* only for projects navbar */
+.projects-nav a.home-link {
+  color: rgb(0, 200, 150);
+}
+
+.projects-nav a.home-link:hover {
+  color: rgb(0, 255, 200);
+}
+
+.projects-nav a.home-link.active {
+  color: rgb(0, 200, 150);
+  border-bottom: 2px solid rgb(0, 200, 150);
+}

@@ -15,8 +15,8 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectsLayout />}>
-          <Route index element={<div>I've selected a couple of projects I am allowed
-             to show and that I love for you to see up on top</div>} />
+          <Route index element={<div><h2>I've selected a couple of projects I am allowed
+             to show and that I love for you to see up on top</h2></div>} />
           <Route path="cnc-lathe" element={<CncLathe />} />
           <Route path="radiator-led-lamp" element={<RadiatorForLEDLamp />} />
           <Route path="metal-rings-welding-machine" element={<MetalRingsWeldingMachine />} />

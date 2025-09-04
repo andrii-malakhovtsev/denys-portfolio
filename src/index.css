@@ -9,6 +9,19 @@ html, body {
   scroll-padding-top: 60px;
 }
 
+body {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      #ffffff,
+      #fafafa 3px,
+      #ffffff 5px
+    ),
+    url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
 h1, h2 {
   font-family: 'Orbitron', sans-serif, Arial, Helvetica;
 }

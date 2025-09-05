@@ -92,9 +92,10 @@ ul {
 
 /* Footer */
 .footer {
+  background-color: gray;
+  color: white;
   text-align: center;
   font-size: 0.85rem;
-  color: #555;
   border-top: 1px solid #ccc;
 }
 

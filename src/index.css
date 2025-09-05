@@ -20,13 +20,7 @@ body {
     url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
   background-blend-mode: multiply;
   background-attachment: fixed;
-}
 
-h1, h2 {
-  font-family: 'Orbitron', sans-serif, Arial, Helvetica;
-}
-
-body {
   font-family: 'Titillium Web', sans-serif, Arial, Helvetica;
   font-weight: 500;
   line-height: 1.6;
@@ -34,6 +28,10 @@ body {
   background-color: var(--background-color);
   padding: 0;
   margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif, Arial, Helvetica;
 }
 
 /* App Structure */

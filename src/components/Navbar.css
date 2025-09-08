@@ -8,6 +8,16 @@
   gap: 2rem;
   border-bottom: 1px solid #ddd;
   padding: 6px 0;
+  flex-wrap: wrap;
+}
+
+.nav::-webkit-scrollbar {
+  height: 6px;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
 }
 
 .nav a {
@@ -18,6 +28,7 @@
   padding: 6px 0;
   transition: color 0.3s ease, text-decoration 0.3s ease, border-bottom 0.3s ease;
   display: inline-block;
+  flex-shrink: 0; /* prevent link from shrinking */
 }
 
 .nav a:hover {
@@ -33,16 +44,27 @@
   font-weight: 700;
 }
 
-/* only for projects navbar */
+/* Projects specific */
 .projects-nav a.home-link {
-  color: rgb(0, 193, 200);
+  color: rgb(13, 219, 174);
 }
 
 .projects-nav a.home-link:hover {
   color: rgb(0, 255, 200);
 }
 
-.projects-nav a.home-link.active {
-  color: rgb(0, 200, 150);
-  border-bottom: 2px solid rgb(0, 200, 150);
+@media (max-width: 768px) {
+  .projects-nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
+  }
+
+  .projects-nav a {
+    padding: 6px 0;
+    font-size: 1.2rem;
+  }
 }
